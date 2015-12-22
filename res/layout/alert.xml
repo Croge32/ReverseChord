@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/chordName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="TextView"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/intervalView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/interval"
+        android:layout_alignBottom="@+id/interval"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:text="Interval:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/notesView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/notes"
+        android:layout_alignBottom="@+id/notes"
+        android:layout_alignLeft="@+id/intervalView"
+        android:text="Notes:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/scaleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/scale"
+        android:layout_alignBottom="@+id/scale"
+        android:layout_alignLeft="@+id/intervalView"
+        android:text="Scale:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/scale"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/notes"
+        android:layout_below="@+id/interval"
+        android:paddingBottom="30dp"
+        android:text="Scale"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/abbr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/chordName"
+        android:layout_centerHorizontal="true"
+        android:text="(abbr)" />
+
+    <TextView
+        android:id="@+id/interval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/notes"
+        android:layout_marginRight="14dp"
+        android:text="Interval"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/notes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/abbr"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="13dp"
+        android:text="Notes"
+        android:textSize="20sp" />
+
+</RelativeLayout>

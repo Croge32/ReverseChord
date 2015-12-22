@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/searchIcon"
+        android:layout_centerHorizontal="true"
+        android:text="Find Chord"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/searchIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/search_icon" />
+
+    <View
+        android:id="@+id/searchButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/find"
+        android:layout_alignLeft="@+id/find"
+        android:layout_alignRight="@+id/find"
+        android:layout_alignTop="@+id/searchIcon"
+        android:background="@drawable/button_background" />
+
+    <View
+        android:id="@+id/guitarButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@+id/input"
+        android:layout_alignLeft="@+id/input"
+        android:layout_alignRight="@+id/input"
+        android:layout_alignTop="@+id/guitarIcon"
+        android:background="@drawable/button_background" />
+
+    <TextView
+        android:id="@+id/input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guitarIcon"
+        android:layout_centerHorizontal="true"
+        android:text="Input Chord"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/musicIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignLeft="@+id/searchIcon"
+        android:layout_below="@+id/guitarButton"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/music_icon" />
+
+    <TextView
+        android:id="@+id/songs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/musicIcon"
+        android:text="View Songs"
+        android:textSize="24sp" />
+
+    <View
+        android:id="@+id/musicButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/songs"
+        android:layout_alignLeft="@+id/songs"
+        android:layout_alignRight="@+id/songs"
+        android:layout_alignTop="@+id/musicIcon"
+        android:background="@drawable/button_background" />
+
+    <View
+        android:id="@+id/guitarIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/find"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:background="@drawable/guitar_icon" />
+
+</RelativeLayout>

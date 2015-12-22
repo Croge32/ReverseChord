@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+	<ScrollView 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content" >
+	    
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content">
+	               
+		 	<ImageView
+		 	    android:id="@+id/fretboard"
+		 	    android:layout_width="wrap_content"
+		 	    android:layout_height="wrap_content"
+		 	    android:layout_alignParentLeft="true"
+		 	    android:layout_alignParentRight="true"
+		 	    android:adjustViewBounds="true"
+		 	    android:src="@drawable/guitarneckexact" >
+	
+			</ImageView>
+		 	
+		 	<View
+		 	    android:id="@+id/D"
+		 	    android:layout_width="20dp"
+		 	    android:layout_height="1350dp"
+		 	    android:layout_alignParentTop="true"
+		 	    android:layout_marginLeft="10dp"
+		 	    android:layout_toRightOf="@+id/A" />
+		 	
+		 	<View
+		 	    android:id="@+id/G"
+		 	    android:layout_width="20dp"
+		 	    android:layout_height="1350dp"
+		 	    android:layout_alignParentTop="true"
+		 	    android:layout_marginLeft="13dp"
+		 	    android:layout_toRightOf="@+id/D" />
+		 	
+		 	<View
+		 	    android:id="@+id/B"
+		 	    android:layout_width="20dp"
+		 	    android:layout_height="1350dp"
+		 	    android:layout_alignParentTop="true"
+		 	    android:layout_marginLeft="9dp"
+		 	    android:layout_toRightOf="@+id/G" />
+
+		 	<View
+		 	    android:id="@+id/A"
+		 	    android:layout_width="20dp"
+		 	    android:layout_height="1350dp"
+		 	    android:layout_alignParentTop="true"
+		 	    android:layout_marginLeft="10dp"
+		 	    android:layout_toRightOf="@+id/E" />
+
+		 	<View
+		 	    android:id="@+id/ESelected"
+		 	    android:layout_width="27dp"
+		 	    android:layout_height="25dp"
+		 	    android:layout_alignParentTop="true"
+		 	    android:layout_marginTop="60dp"
+		 	    android:layout_marginLeft="90dp"
+		 	    android:visibility="invisible"
+		 	    android:background="@drawable/fret_selected" />
+		 	
+		 	<View
+		 	    android:id="@+id/ASelected"
+		 	    android:layout_width="27dp"
+		 	    android:layout_height="25dp"
+		 	    android:layout_alignParentTop="true"
+		 	    android:layout_marginTop="60dp"
+		 	    android:layout_marginLeft="119dp"
+		 	    android:visibility="invisible"
+		 	    android:background="@drawable/fret_selected" />
+		 	
+		 	<View
+		 	    android:id="@+id/DSelected"
+		 	    android:layout_width="27dp"
+		 	    android:layout_height="25dp"
+		 	    android:layout_alignParentTop="true"
+		 	    android:layout_marginTop="60dp"
+		 	    android:layout_marginLeft="149dp"
+		 	    android:visibility="invisible"
+		 	    android:background="@drawable/fret_selected" />
+		 	
+		 	<View
+		 	    android:id="@+id/GSelected"
+		 	    android:layout_width="27dp"
+		 	    android:layout_height="25dp"
+		 	    android:layout_alignParentTop="true"
+		 	    android:layout_marginTop="60dp"
+		 	    android:layout_marginLeft="182dp"
+		 	    android:visibility="invisible"
+		 	    android:background="@drawable/fret_selected" />
+		 	
+		 	<View
+		 	    android:id="@+id/BSelected"
+		 	    android:layout_width="27dp"
+		 	    android:layout_height="25dp"
+		 	    android:layout_alignParentTop="true"
+		 	    android:layout_marginTop="60dp"
+		 	    android:layout_marginLeft="211dp"
+		 	    android:visibility="invisible"
+		 	    android:background="@drawable/fret_selected" />
+		 	
+		 	<View
+		 	    android:id="@+id/eSelected"
+		 	    android:layout_width="27dp"
+		 	    android:layout_height="25dp"
+		 	    android:layout_alignParentTop="true"
+		 	    android:layout_marginTop="60dp"
+		 	    android:layout_marginLeft="239dp"
+		 	    android:visibility="invisible"
+		 	    android:background="@drawable/fret_selected" />
+
+		 	<View
+		 	    android:id="@+id/E"
+		 	    android:layout_width="20dp"
+		 	    android:layout_height="1350dp"
+		 	    android:layout_alignParentTop="true"
+		 	    android:layout_alignRight="@+id/ESelected" />
+
+		 	<View
+		 	    android:id="@+id/e"
+		 	    android:layout_width="20dp"
+		 	    android:layout_height="1350dp"
+		 	    android:layout_alignRight="@+id/eSelected"
+		 	    android:layout_centerVertical="true" />
+
+	    </RelativeLayout>
+	</ScrollView>
+
+	
+	<View
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:background="@drawable/button" />
+
+</RelativeLayout>
